@@ -1,96 +1,73 @@
 .products {
-    background-color: $grey-light;
-    height: auto;
-    text-align: center;
-  
-    & .cards,
-    & .cards__hidden {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin: 0 4vw;
-  
-      // width: 100%;
-  
-      & .card {
-        // border: 1px solid #ddd;
-        background-color: rgb(250, 250, 250);
-        width: 27%;
-        // width: 20%;
-        // height: 200px; ------------
-        margin: 4% 1% 0 1%;
-        overflow: hidden;
-        transition: all 0.3s;
-  
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-  
-        &__img {
-          height: 60%;
+  background-color: $grey-light;
+  height: auto;
+  text-align: center;
+
+  & .cards,
+  & .cards__hidden {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 4vw;
+
+    & .card {
+      background-color: rgb(250, 250, 250);
+      width: 27%;
+      margin: 4% 1% 0 1%;
+      overflow: hidden;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      &__img {
+        height: 60%;
+        width: 100%;
+
+        & img {
+          margin: 0;
+          height: 100%;
           width: 100%;
-          // margin: 0;
-          // width: 100%;
-          // object-fit: cover;
-  
-          & img {
-            margin: 0;
-            // max-width: 100%;
-            // height: auto;
-            height: 100%;
-            // width /***/:auto;
-            // width: auto;
-            width: 100%;
-            // object-fit: fill;
-            object-fit: fill;
-            // object-fit: none;
-            // object-fit: contain;
-            // height: 100％;
-            // height: 60%;
-          }
-        }
-  
-        &__info {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          height: 40%;
-          margin: 3% 4%;
-          font-size: 2vw;
-        }
-  
-        &__info__footer {
-          display: flex;
-          justify-content: space-between;
-          // padding: 0 4%;
-  
-          & p {
-            // margin: 3% 4%;
-          }
+          object-fit: fill;
         }
       }
-    }
-    & .cards__hidden,
-    & .hide_btn {
-      display: none;
-    }
-  
-    & .hide_btn,
-    & .show_btn {
-      margin: 3% 0;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 40%;
+        margin: 3% 4%;
+        font-size: 2vw;
+      }
+
+      &__info__footer {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
+  & .cards__hidden,
+  & .hide_btn {
+    display: none;
+  }
+
+  & .hide_btn,
+  & .show_btn {
+    margin: 3% 0;
+  }
+}
 
 @media (max-width: 1024px) {
-
 }
 
 @media (max-width: 480px) {
-    .products {
-        & .cards .card,
-        & .cards__hidden .card {
-          width: 45%;
-        }
-      }
+  .products {
+    & .cards .card,
+    & .cards__hidden .card {
+      width: 45%;
+    }
+  }
 }
