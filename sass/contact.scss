@@ -1,0 +1,114 @@
+.contact {
+    background-color: $grey-light;
+    // position: relative;
+    height: 100%;
+    text-align: center;
+  
+    &__content {
+      // display: block;
+      position: relative;
+      height: 65%;
+      width: 40%;
+      // margin: 0 0 3% 3%;
+      // padding: 5% 5% 2% 5%;
+  
+      & form {
+        background-color: #c9c9c9;
+        padding: 20px;
+        text-align: left;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10% 10%;
+  
+        & span {
+          display: inline-block;
+          margin-top: 15px;
+          text-align: center;
+          // width: 100%;
+          margin: 0 auto;
+          // background-color: red;
+        }
+  
+        & label {
+          // font-size: 1.3rem;
+          font-size: 2.3vw;
+          letter-spacing: 2px;
+          color: #848484;
+        }
+  
+        & input {
+          // color: $grey-light;
+          height: 1.3rem;
+        }
+  
+        & textarea {
+          margin-bottom: 20px;
+        }
+        & input,
+        & textarea {
+          resize: none;
+          width: 97%;
+          // margin: 10px 0 20px 0;
+          border-style: none;
+          // appearance: none;
+          // text-align: center;
+          margin-top: -10px;
+  
+          &:focus {
+            // border: none;
+            outline: none;
+          }
+        }
+      }
+  
+      &__btn {
+        // margin-top: 50px;
+        // margin-top: auto;
+        // vertical-align:middle;
+        // background-color: red;
+      }
+  
+      & img {
+        position: absolute;
+        bottom: -7%;
+        left: 160%;
+        // bottom: 0;
+        // right: -150px;
+        // right: -30%;
+        // left: 60%;
+        height: 60%;
+        // width: 40%;
+      }
+    }
+  }
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 480px) {
+    .contact {
+        &__content {
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          margin: 0 auto !important;
+          width: 70%;
+    
+          & form {
+            z-index: 1;
+            background-color: rgba(201, 201, 201, 0.726);
+          }
+          &__btn {
+          }
+          & img {
+            // bottom: 0;
+            // z-index: -1;
+            left: -20%;
+            height: 80%;
+          }
+        }
+      }
+}
