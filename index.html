@@ -8,9 +8,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="h.css"> -->
 </head>
 
 <body>
+    <!--------------- hamburger --------------->
+    <div class="ham__wrapper">
+        <span class="ham" id="ham">
+            <span class="ham_line ham_line1"></span>
+            <span class="ham_line ham_line2"></span>
+            <span class="ham_line ham_line3"></span>
+        </span>
+
+        <div class="menu_wrapper" id="menu_wrapper">
+            <div class="menu">
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#products">Producs</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--------------- hamburger --------------->
     <header>
         <!-- <div class="logo"> -->
         <img src="./img/logo_simple02.png" alt="simple logo">
@@ -28,34 +52,212 @@
 
     <section id="top" class="hero">
         <img class="hero-img" src="./img/logo02.png" alt="logo">
-        <p>Your doggy's health. Our priority.</p>
+        <p>Your doggy's health.<br class="br-mobile">Our priority.</p>
+        <!-- <span>Your doggy's health.</span> -->
+        <!-- <span>Our priority.</span> -->
     </section>
 
     <section id="about" class="about">
-        <p class="about__title">About Us</p>
+        <p class="section__title">About Us</p>
         <div class="about__content">
             <!-- <div class="about__content__text"> -->
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit dignissimos architecto aperiam
                 repudiandae velit, libero nihil recusandae id iste pariatur tenetur eveniet facilis. Harum itaque,
-                repellendus a quis repudiandae dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
-                fuga ducimus officiis quisquam? Esse corporis, praesentium explicabo assumenda quo qui a quia ducimus
-                dolorem non quas rerum cumque amet voluptatem?</p>
+                repellendus a quis repudiandae dolorem!</p>
             <!-- </div> -->
             <img src="./img/dog04_02.png" alt="">
         </div>
     </section>
 
     <section id="products" class="products">
-        <p class="products__title">Products</p>
-        <div class="products__content">
-            <div class="products___content">
+        <p class="section__title">Products</p>
 
+
+<!-- food shown part -->
+        <div class="cards">
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product01.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product02.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product03.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product04.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product05.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product06.png" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
             </div>
         </div>
+<!-- food shown part -->
+
+<!-- food hidden part -->
+        <div class="cards__hidden">
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product07.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product08.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product09.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product10.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product11.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/product12.jpg" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__info__text">
+                        dog food
+                    </div>
+                    <div class="card__info__footer">
+                        <p>$14.15</p>
+                        <p>In Stock</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- food hidden part -->
+
+
+        <div class="btn hide_btn" onclick="showLess()">Show less</div>
+        <div class="btn show_btn" onclick="showMore()">Show more</div>
     </section>
 
     <section id="location" class="location">
-        <p class="location__title">Location</p>
+        <p class="section__title">Location</p>
         <div class="location__content">
             <img src="./img/dog01.png" alt="">
             <iframe class="location__content__map"
@@ -65,19 +267,23 @@
         </div>
     </section>
 
-    <section id="contacr" class="contact">
-        <p class="contact__title">Contact</p>
+    <section id="contact" class="contact">
+        <p class="section__title">Contact</p>
         <div class="contact__content">
-            <form action="">
-                <label for="">Name</label><br>
-                <input type="text"><br>
-                <label for="">Email</label><br>
-                <input type="email"><br>
-                <label for="">Content</label><br>
-                <textarea name="content" id="content" cols="30" rows="5"></textarea>
-            </form>
-            <div class="btn contact__content__btn">Send</div>
             <img src="./img/dog03_02.png" alt="">
+            <!-- <div class="contact__content__form"> -->
+                <form action="">
+                    <label for="">Name</label><br>
+                    <input type="text"><br>
+                    <label for="">Email</label><br>
+                    <input type="email"><br>
+                    <label for="">Content</label><br>
+                    <textarea name="content" id="content" cols="30" rows="5"></textarea>
+                    <span class="btn contact__content__btn">
+                        Send
+                    </span>
+                </form>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -94,6 +300,10 @@
             </div>
             <p>&copy; 2021 Koji Okajima</p>
     </footer>
+
+
+    <script src="./showhide.js"></script>
+    <script src="./hamburger.js"></script>
 </body>
 
 </html>
